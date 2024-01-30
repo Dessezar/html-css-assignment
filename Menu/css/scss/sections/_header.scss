@@ -1,0 +1,26 @@
+header{
+    .container{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .site-navigation{
+        display: flex;
+        align-items: center;
+        a{
+            margin-right: 40px;
+        }
+    }
+    .site-settings{
+        display: flex;
+        align-items: center;
+
+        .theme-mode{
+            display: flex;
+            align-items: center;
+            svg{
+                margin-top: 18px;
+            }
+        }
+    }
+}
