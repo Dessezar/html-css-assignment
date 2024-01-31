@@ -1,26 +1,46 @@
 header{
+    background-color: red;
+    padding: 30;
+
     .container{
         display: flex;
         justify-content: space-between;
 
-    }
-    .site-navigation{
-        display: flex;
-        align-items: center;
-        a{
-            margin-right: 40px;
-        }
-    }
-    .site-settings{
-        display: flex;
-        align-items: center;
-
-        .theme-mode{
+        .site-navigation{
             display: flex;
             align-items: center;
-            svg{
-                margin-top: 18px;
+    
+           .logo{
+            margin-right: 30px;
+           }
+
+           nav{
+            display: none;
+           }
+        }
+
+        .site-settings{
+            display: none;
+            align-items: center;
+    
+            .theme-mode{
+                display: flex;
+                align-items: center;
+
+                svg{
+                    margin-top: 18px;
+                }
             }
+
+            .signin-up-button{
+                margin-left: 30px;
+            }
+        }
+        .mobile-nav{
+            background-color: transparent;
+            border: none;
+            font-size: 2rem;
+            color: $greay-800;
         }
     }
 }
