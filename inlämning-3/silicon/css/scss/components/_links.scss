@@ -3,6 +3,7 @@ a {
     color: $primary;
     text-decoration: none;
     transition: all 0.25s ease-in-out;
+    display: inline-block;
 
     &:hover {
         text-decoration: underline;
