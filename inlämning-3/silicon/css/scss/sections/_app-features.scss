@@ -1,6 +1,38 @@
 #app-features{
     .container{
         display: grid;
+        grid-template-columns: 1fr auto auto;
+        grid-template-areas: "img" "h1" "h1"
+                             "img" "p" "p"
+                             "img" "easy-payments" "data-security"
+                             "img" "cost-statistics" "support"
+                             "img" "regular-cashback" "top-standard";
+
+
+        #app-features-phone{
+            grid-area: img;
+            width: 100%;
+            padding: 20px 40px;
+        } 
+        #easy-payments{
+            grid-area: easy-payments;
+        }
+        #data-security{
+            grid-area: data-security;
+        }
+        #cost-statistics{
+            grid-area: cost-statistics;
+        }
+        #support{
+            grid-area: support;
+        }
+        #regular-cashback{
+            grid-area: regular-cashback;
+        }
+        #top-standard{
+            grid-area: top-standard;
+        }
+
 
 
 
