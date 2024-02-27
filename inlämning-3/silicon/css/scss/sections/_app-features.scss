@@ -1,44 +1,27 @@
 #app-features{
     .container{
         display: grid;
-        grid-template-columns: 1fr auto auto;
-        grid-template-areas: "img" "h1" "h1"
-                             "img" "p" "p"
-                             "img" "easy-payments" "data-security"
-                             "img" "cost-statistics" "support"
-                             "img" "regular-cashback" "top-standard";
+        gap: 30px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "img title"
+                             "img content";
 
-
-        #app-features-phone{
+        #app-features-phone {
             grid-area: img;
-            width: 100%;
-            padding: 20px 40px;
+            width: 60%;
+            height: auto;
         } 
-        #easy-payments{
-            grid-area: easy-payments;
-        }
-        #data-security{
-            grid-area: data-security;
-        }
-        #cost-statistics{
-            grid-area: cost-statistics;
-        }
-        #support{
-            grid-area: support;
-        }
-        #regular-cashback{
-            grid-area: regular-cashback;
-        }
-        #top-standard{
-            grid-area: top-standard;
+
+        .title {
+            grid-area: title;
         }
 
-
-
-
-
-
-
+        .content {
+            grid-area: content;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
 
     }
 }
