@@ -3,6 +3,13 @@ html, body {
     font-size: 16px; 
 }
 
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
 .wrapper {
     display: grid;
     height: 100dvh;
