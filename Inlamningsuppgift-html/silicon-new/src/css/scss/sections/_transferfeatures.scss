@@ -1,0 +1,14 @@
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "text-and-buttom" "img"
+                         "img" "text-and-button";
+
+
+
+
+    .check-img-and-text{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

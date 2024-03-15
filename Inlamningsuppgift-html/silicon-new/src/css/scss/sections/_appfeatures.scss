@@ -1,0 +1,55 @@
+#app-features {
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-areas:"img" "text-and-icons";
+
+        .mobile-appfeatures {
+
+        }
+
+        .text-and-icons {
+
+            .title {
+
+                h1 {
+
+                }
+
+                p {
+
+                }
+            }
+
+            .features {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+
+
+                .feature {
+                    display: grid; 
+                    grid-template-columns: 1fr 2fr;
+
+                    img {
+
+                    }
+
+                    .feature-content {
+
+                        h5 {
+
+                        }
+
+                        p {
+
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+
+}
