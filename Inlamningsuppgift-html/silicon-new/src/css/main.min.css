@@ -595,3 +595,17 @@ header .container #btn-menu {
 .container .subscribe-container {
   background-color: #F3F6FF;
 }
+
+.container .card .card-title {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .card .card-title #accordion-button {
+  background-color: #F3F6FF;
+  border: none;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}

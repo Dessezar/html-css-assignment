@@ -1,0 +1,25 @@
+.container{
+    .card{
+        .card-title{
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            #accordion-button{
+                background-color: $gray-100;
+                border: none;
+                border-radius: 50%;
+                height: 30px;
+                width: 30px;
+            }
+            
+
+
+
+
+
+
+        }
+    }
+}

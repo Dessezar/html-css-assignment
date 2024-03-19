@@ -4,6 +4,7 @@ import Brands from './sections/Brands'
 import Appfeatures from './sections/Appfeatures'
 import Transferfeatures from './sections/Transferfeatures'
 import Subscribe from './sections/Subscribe'
+import FAQ from './sections/FAQ'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Appfeatures />
       <Transferfeatures />
       <Subscribe />
+      <FAQ />
     </main>
   )
 }
