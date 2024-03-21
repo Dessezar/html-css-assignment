@@ -1,0 +1,52 @@
+#testemonials{
+    margin-top: 200px;
+    background: radial-gradient(120.91% 118.4% at 50% 100%, rgba(99, 102, 241, 0.10) 0%, rgba(218, 70, 239, 0.05) 41.83%, rgba(241, 244, 253, 0.07) 82.52%);
+    .container{
+        .test-content{
+            display: flex;
+            justify-content: space-between;
+
+            .title-buttons{
+                .test-title{
+                    padding: 20px;
+
+                }
+                .test-buttons{
+                    display: flex;
+
+
+
+                    #left-test-button{
+                        background-color: white;
+                        border: none;
+                        border-radius: 50%;
+                        height: 30px;
+                        width: 30px;
+                        margin-right: 20px;
+                        box-shadow: 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03), 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06);
+                    }
+                    #right-test-button{
+                        background-color: white;
+                        border: none;
+                        border-radius: 50%;
+                        height: 30px;
+                        width: 30px;
+                        box-shadow: 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03), 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06);
+                    }
+                }
+
+            }
+
+            .test-cards{
+                display: flex;
+                justify-content: space-between;
+            }
+
+
+
+
+
+
+        }
+    }
+}

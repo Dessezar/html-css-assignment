@@ -621,3 +621,77 @@ header .container #btn-menu {
   height: 30px;
   width: 30px;
 }
+
+#HowDoesItWork {
+  background-color: #F3F6FF;
+}
+#HowDoesItWork .container .how-content .how-title {
+  display: flex;
+  justify-content: center;
+}
+#HowDoesItWork .container .how-content .img-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 60px 10px 60px;
+}
+#HowDoesItWork .container .how-content .img-buttons #left-slide-button {
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  box-shadow: 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03), 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06);
+}
+#HowDoesItWork .container .how-content .img-buttons #right-slide-button {
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  box-shadow: 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03), 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06);
+}
+#HowDoesItWork .container .how-content .how-bottom-text h2 {
+  display: flex;
+  justify-content: center;
+}
+#HowDoesItWork .container .how-content .how-bottom-text p {
+  display: flex;
+  justify-content: center;
+}
+
+#testemonials {
+  margin-top: 200px;
+  background: radial-gradient(120.91% 118.4% at 50% 100%, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 41.83%, rgba(241, 244, 253, 0.07) 82.52%);
+}
+#testemonials .container .test-content {
+  display: flex;
+  justify-content: space-between;
+}
+#testemonials .container .test-content .title-buttons .test-title {
+  padding: 20px;
+}
+#testemonials .container .test-content .title-buttons .test-buttons {
+  display: flex;
+}
+#testemonials .container .test-content .title-buttons .test-buttons #left-test-button {
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  margin-right: 20px;
+  box-shadow: 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03), 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06);
+}
+#testemonials .container .test-content .title-buttons .test-buttons #right-test-button {
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  box-shadow: 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03), 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06);
+}
+#testemonials .container .test-content .test-cards {
+  display: flex;
+  justify-content: space-between;
+}
