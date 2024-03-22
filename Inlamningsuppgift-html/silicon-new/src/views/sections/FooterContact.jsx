@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { NavLink, Link } from 'react-router-dom'
+import darkemail from "../../images/icons/bx-envelope.svg"
 
 import Logo from '../../images/solid.svg'
 
@@ -36,6 +37,7 @@ const FooterContact = () => {
                         <div className="input">
                             <form onSubmit={handleSubmit} noValidate>
                                 <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder='Your Email' />
+                                <i><img src={darkemail} alt="" /></i>
                                 <button type="submit" id="btn-account" className="btn btn-theme" href="signin.html"><i className="fa-regular"></i>Subscribe</button>
                             </form>
                         </div>

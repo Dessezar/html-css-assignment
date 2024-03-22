@@ -1,47 +1,111 @@
 #footerContact{
+    margin-top: 40px;
+    padding-top: 50px;
     background-color: $gray-900;
     .container{
         display: flex;
         .info{
-            width: 800px;
+            width: 460px;
+            padding-right: 100px;
             img{
+                
 
             }
-            .subscribe{
+            p{
+                color: var(--White, #FFF);
+                font-feature-settings: 'clig' off, 'liga' off;
 
+                /* Body/S */
+                font-family: Manrope;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 160%; /* 22.4px */
+                opacity: 0.7;
+            }
+            .subscribe{
+                .input{
+                    position: relative;
+                    form{
+                        display: flex;
+                        justify-content: left;
+                        input{
+                            padding-left: 40px;
+                            border-top-left-radius: 6px;
+                            border-bottom-left-radius: 6px;
+                            border: 1px solid rgba(255, 255, 255, 0.18);
+                            background: rgba(255, 255, 255, 0.02);
+                            width: 240px;
+                        }
+                        i{
+                            // border: solid red;
+                            position: absolute;
+                            top: 63%;
+                            left: 10px; /* Justera horisontellt läge för ikonen */
+                            transform: translateY(-50%);
+                        }
+                        button{
+                            border-top-left-radius: 0;
+                            border-bottom-left-radius: 0;
+                            margin-left: -10px;
+                        }
+                    }
+                }
+
+            }
+            .reserve{
+                p{
+
+                    color: var(--White, #FFF);
+    
+                    /* Body/XS */
+                    font-family: Manrope;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 160%; /* 19.2px */
+                }
             }
         }
         .links{
-            width: 300px;
+            width: 250px;
             display: flex;
             flex-direction: column;
             margin-bottom: 100px;
            .nav-link{
+            opacity: 0.85;
+
             color: $white;
         }
         .terms{
-            width: 300px;
+            width: 200px;
             display: flex;
             flex-direction: column;
             margin-bottom: 10px;
             padding-top: 30px;
             .nav-link{
                     color: $white;
+                    opacity: 0.85;
                 }
             }
         }
         .socials{
+            // padding-right: 30px;
             width: 300px;
             display: flex;
             flex-direction: column;
             margin-bottom: 100px;
            .nav-link{
             color: $white;
+            opacity: 0.85;
+
             }
         }
         .contact{
             .nav-link{
                 color: $white;
+                opacity: 0.85;
+
                 }
             p{
                 color: $primary;

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 html, body {
   line-height: 160%;
@@ -598,14 +599,88 @@ header .container #btn-menu {
 
 #contact-us {
   background-color: #F3F6FF;
+  height: 650px;
 }
 #contact-us .container .contact-content {
   display: flex;
   justify-content: space-between;
+  flex-shrink: 0;
 }
 #contact-us .container .contact-content .text-content .icon-and-text {
   display: flex;
 }
+#contact-us .container .contact-content .text-content .icon-and-text img {
+  margin-top: 15px;
+  padding-right: 15px;
+}
+#contact-us .container .contact-content .text-content .icon-and-text p {
+  align-self: stretch;
+  width: 300px;
+  color: var(--Gray-700, #565973);
+  font-feature-settings: "clig" off, "liga" off;
+  /* Body/M */
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+}
+#contact-us .container .contact-content .contact-form {
+  padding: 30px;
+  margin: 70px;
+  background-color: white;
+  width: 436px;
+  height: 570px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: var(--White, #FFF);
+  /* shadow/L */
+  box-shadow: 0px 4px 13px -2px rgba(19, 16, 34, 0.06), 0px 4.8px 24.4px -6px rgba(19, 16, 34, 0.1);
+}
+#contact-us .container .contact-content .contact-form form {
+  width: 400px;
+}
+#contact-us .container .contact-content .contact-form form label {
+  color: var(--Gray-900, #0B0F19);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%; /* 25.6px */
+}
+#contact-us .container .contact-content .contact-form form input {
+  height: 30px;
+  border-radius: 8px;
+  border: 1px solid var(--Gray-400, #D4D7E5);
+  background: var(--White, #FFF);
+  margin-bottom: 15px;
+}
+#contact-us .container .contact-content .contact-form form select {
+  height: 35px;
+  border-radius: 8px;
+  border: 1px solid var(--Gray-400, #D4D7E5);
+  background: var(--White, #FFF);
+  margin-bottom: 15px;
+}
+#contact-us .container .contact-content .contact-form form .date-time {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#contact-us .container .contact-content .contact-form form .date-time #date {
+  margin-right: 30px;
+}
+#contact-us .container .contact-content .contact-form form .date-time #time {
+  margin-left: 30px;
+}
+#contact-us .container .contact-content .contact-form form .date-time label#time {
+  margin-left: 30px;
+}
+#contact-us .container .contact-content .contact-form button {
+  width: 170px;
+  font-size: 10px;
+}
+
 #FAQ .container .accordion {
   display: flex;
   width: 746px;
@@ -743,7 +818,11 @@ header .container #btn-menu {
 }
 
 #medicalCenter .container .content {
+  padding: 150px 0 50px 0;
   display: flex;
+}
+#medicalCenter .container .content .map {
+  padding: 40px;
 }
 #medicalCenter .container .content .adresses {
   padding: 10px;
@@ -751,42 +830,95 @@ header .container #btn-menu {
 #medicalCenter .container .content .adresses .info .adress {
   margin-top: -50px;
   display: flex;
-  padding: 10px;
+  padding: 20px;
 }
 #medicalCenter .container .content .adresses .info .phone-number {
   margin-top: -50px;
-  padding: 10px;
+  padding: 20px;
   display: flex;
 }
 #medicalCenter .container .content .adresses .info .open {
   margin-top: -70px;
-  padding: 10px;
+  padding: 20px;
   display: flex;
 }
 #medicalCenter .container .content .adresses .info .open p {
   margin-top: 40px;
 }
+#medicalCenter .container .content .adresses .social-links img {
+  padding: 5px;
+}
 
 #footerContact {
+  margin-top: 40px;
+  padding-top: 50px;
   background-color: #0B0F19;
 }
 #footerContact .container {
   display: flex;
 }
 #footerContact .container .info {
-  width: 800px;
+  width: 460px;
+  padding-right: 100px;
+}
+#footerContact .container .info p {
+  color: var(--White, #FFF);
+  font-feature-settings: "clig" off, "liga" off;
+  /* Body/S */
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 22.4px */
+  opacity: 0.7;
+}
+#footerContact .container .info .subscribe .input {
+  position: relative;
+}
+#footerContact .container .info .subscribe .input form {
+  display: flex;
+  justify-content: left;
+}
+#footerContact .container .info .subscribe .input form input {
+  padding-left: 40px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.02);
+  width: 240px;
+}
+#footerContact .container .info .subscribe .input form i {
+  position: absolute;
+  top: 63%;
+  left: 10px; /* Justera horisontellt läge för ikonen */
+  transform: translateY(-50%);
+}
+#footerContact .container .info .subscribe .input form button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-left: -10px;
+}
+#footerContact .container .info .reserve p {
+  color: var(--White, #FFF);
+  /* Body/XS */
+  font-family: Manrope;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 19.2px */
 }
 #footerContact .container .links {
-  width: 300px;
+  width: 250px;
   display: flex;
   flex-direction: column;
   margin-bottom: 100px;
 }
 #footerContact .container .links .nav-link {
+  opacity: 0.85;
   color: #f2f2f2;
 }
 #footerContact .container .links .terms {
-  width: 300px;
+  width: 200px;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
@@ -794,6 +926,7 @@ header .container #btn-menu {
 }
 #footerContact .container .links .terms .nav-link {
   color: #f2f2f2;
+  opacity: 0.85;
 }
 #footerContact .container .socials {
   width: 300px;
@@ -803,9 +936,11 @@ header .container #btn-menu {
 }
 #footerContact .container .socials .nav-link {
   color: #f2f2f2;
+  opacity: 0.85;
 }
 #footerContact .container .contact .nav-link {
   color: #f2f2f2;
+  opacity: 0.85;
 }
 #footerContact .container .contact p {
   color: #6366F1;

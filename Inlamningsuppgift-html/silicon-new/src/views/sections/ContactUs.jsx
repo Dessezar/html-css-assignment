@@ -69,7 +69,7 @@ useEffect(() => {
                     <div className="icon-and-text">
                         <div className="icon"><img src={emailIcon} alt="" /></div>
                         <div className="text">
-                            <h4>email us</h4>
+                            <h4>Email us</h4>
                             <p>Please feel free to drop us a line. We will respond as soon as possible.</p>
                             <img src={leavemsg} alt="" />
                         </div>
@@ -86,35 +86,37 @@ useEffect(() => {
 
                 </div>
 
-                <form onSubmit={handleSubmit} noValidate>
-                    <label htmlFor="name">Full name</label>
-                    <input id='name' value={fullName} onChange={(e) => setfullName(e.target.value)} type="text" />
-
-                    <label htmlFor="email">Email address</label>
-                    <input id='email' value={email} onChange={(e) => setEmail(e.target.value)} type="email" />
-
-                    <label htmlFor="specialist">Specialist</label>
-                    <select name="" id="specialist" onChange={(e) => setSpecialist(e.target.value)}>
-                    {specialistArray.map((specialist) => (
-                        <option value="specialist" key={specialist.id}>{specialist.firstName}</option>
-                        ))}
-                    </select>
-
-                    <label htmlFor="date">Date</label>
-                    <input id='date' value={date} onChange={(e) => setDate(e.target.value)} type="date" />
-
-                    <label htmlFor="time">Time</label>
-                    <input id='time' value={time} onChange={(e) => setTime(e.target.value)} type="time" />
-
-        
+                <div className="contact-form">
+                    <h2>Get Online Consultation</h2>
 
 
+                    <form onSubmit={handleSubmit} noValidate>
+                        <label htmlFor="name">Full name</label>
+                        <input id='name' value={fullName} onChange={(e) => setfullName(e.target.value)} type="text" />
+
+                        <label htmlFor="email">Email address</label>
+                        <input id='email' value={email} onChange={(e) => setEmail(e.target.value)} type="email" />
+
+                        <label htmlFor="specialist">Specialist</label>
+                        <select name="" id="specialist" onChange={(e) => setSpecialist(e.target.value)}>
+                        {specialistArray.map((specialist) => (
+                            <option value="specialist" key={specialist.id}>{specialist.firstName}</option>
+                            ))}
+                        </select>
+                        <div className="date-time">
+
+                            <label htmlFor="date">Date</label>
+                            <label id='time' htmlFor="time">Time</label>
+                            <input id='date' value={date} onChange={(e) => setDate(e.target.value)} type="date" />
+
+                            <input id='time' value={time} onChange={(e) => setTime(e.target.value)} type="time" />
+                        </div>
 
 
+                        <button type="submit" id="btn-account" className="btn btn-theme" href="signin.html"><i className="fa-regular"></i>Make an appointment</button>
+                    </form>
+                </div>
 
-                    <div className="subscribe-button"><button type='submit'>Make an appointment</button></div>
-                    <button type="submit" id="btn-account" className="btn btn-theme" href="signin.html"><i className="fa-regular"></i>Make an appointment</button>
-                </form>
 
 
             </div>

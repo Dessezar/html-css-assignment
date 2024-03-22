@@ -1,9 +1,11 @@
 #medicalCenter{
     .container{
         .content{
+            padding: 150px 0 50px 0;
             display: flex;
 
             .map{
+                padding: 40px;
 
             }
             .adresses{
@@ -15,23 +17,30 @@
                     .adress{
                         margin-top: -50px;
                         display: flex;
-                        padding: 10px;
+                        padding: 20px;
                     }
                     .phone-number{
                         margin-top: -50px;
 
-                        padding: 10px;
+                        padding: 20px;
                         display: flex;
                     }
                     .open{
                         margin-top: -70px;
 
-                        padding: 10px;
+                        padding: 20px;
                         display: flex;
                         p{
                             margin-top: 40px;
                         }
                     }
+                }
+                .social-links{
+                    img{
+                        padding: 5px;
+                    }
+
+                  
                 }
 
             }
