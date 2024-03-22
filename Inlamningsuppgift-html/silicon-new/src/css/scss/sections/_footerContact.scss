@@ -1,0 +1,56 @@
+#footerContact{
+    background-color: $gray-900;
+    .container{
+        display: flex;
+        .info{
+            width: 800px;
+            img{
+
+            }
+            .subscribe{
+
+            }
+        }
+        .links{
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 100px;
+           .nav-link{
+            color: $white;
+        }
+        .terms{
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            padding-top: 30px;
+            .nav-link{
+                    color: $white;
+                }
+            }
+        }
+        .socials{
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 100px;
+           .nav-link{
+            color: $white;
+            }
+        }
+        .contact{
+            .nav-link{
+                color: $white;
+                }
+            p{
+                color: $primary;
+            }
+        }
+
+
+
+
+
+    }
+}

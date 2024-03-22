@@ -1,10 +1,10 @@
 #showcase {
     background: $gradient-background;
-
+    
     @include lg {
         padding-top: 40px;
     }
-
+    
     .container {
         display: grid;
         grid-template-columns: 1fr auto;

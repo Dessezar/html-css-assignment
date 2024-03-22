@@ -596,6 +596,16 @@ header .container #btn-menu {
   background-color: #F3F6FF;
 }
 
+#contact-us {
+  background-color: #F3F6FF;
+}
+#contact-us .container .contact-content {
+  display: flex;
+  justify-content: space-between;
+}
+#contact-us .container .contact-content .text-content .icon-and-text {
+  display: flex;
+}
 #FAQ .container .accordion {
   display: flex;
   width: 746px;
@@ -730,4 +740,73 @@ header .container #btn-menu {
 #home-footer .container .footer-content .reserve-text {
   text-align: center;
   margin: 20px;
+}
+
+#medicalCenter .container .content {
+  display: flex;
+}
+#medicalCenter .container .content .adresses {
+  padding: 10px;
+}
+#medicalCenter .container .content .adresses .info .adress {
+  margin-top: -50px;
+  display: flex;
+  padding: 10px;
+}
+#medicalCenter .container .content .adresses .info .phone-number {
+  margin-top: -50px;
+  padding: 10px;
+  display: flex;
+}
+#medicalCenter .container .content .adresses .info .open {
+  margin-top: -70px;
+  padding: 10px;
+  display: flex;
+}
+#medicalCenter .container .content .adresses .info .open p {
+  margin-top: 40px;
+}
+
+#footerContact {
+  background-color: #0B0F19;
+}
+#footerContact .container {
+  display: flex;
+}
+#footerContact .container .info {
+  width: 800px;
+}
+#footerContact .container .links {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+#footerContact .container .links .nav-link {
+  color: #f2f2f2;
+}
+#footerContact .container .links .terms {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  padding-top: 30px;
+}
+#footerContact .container .links .terms .nav-link {
+  color: #f2f2f2;
+}
+#footerContact .container .socials {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+#footerContact .container .socials .nav-link {
+  color: #f2f2f2;
+}
+#footerContact .container .contact .nav-link {
+  color: #f2f2f2;
+}
+#footerContact .container .contact p {
+  color: #6366F1;
 }

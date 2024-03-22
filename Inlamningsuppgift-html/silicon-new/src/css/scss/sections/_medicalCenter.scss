@@ -1,0 +1,44 @@
+#medicalCenter{
+    .container{
+        .content{
+            display: flex;
+
+            .map{
+
+            }
+            .adresses{
+                padding: 10px;
+                h4{
+
+                }
+                .info{
+                    .adress{
+                        margin-top: -50px;
+                        display: flex;
+                        padding: 10px;
+                    }
+                    .phone-number{
+                        margin-top: -50px;
+
+                        padding: 10px;
+                        display: flex;
+                    }
+                    .open{
+                        margin-top: -70px;
+
+                        padding: 10px;
+                        display: flex;
+                        p{
+                            margin-top: 40px;
+                        }
+                    }
+                }
+
+            }
+
+
+
+        }
+
+    }
+}

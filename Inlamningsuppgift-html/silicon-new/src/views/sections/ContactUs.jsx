@@ -1,4 +1,8 @@
 import React, { useState, useEffect } from 'react'
+import emailIcon from "../../images/icons/email.svg"
+import careers from "../../images/icons/careers.svg"
+import leavemsg from "../../images/leaveMsg.svg"
+import sendAppl from "../../images/sendAppl.svg"
 
 const ContactUs = () => {
     const [fullName, setfullName] = useState("")
@@ -55,56 +59,67 @@ useEffect(() => {
 
   return (
 <main>
-    <div className="container">
-        <div className="contakt-content">
+    <section id="contact-us">
+        <div className="container">
+            <div className="contact-content">
+                <div className="text-content">
 
-            <form onSubmit={handleSubmit} noValidate>
-                <label htmlFor="name">Full name</label>
-                <input id='name' value={fullName} onChange={(e) => setfullName(e.target.value)} type="text" />
+                    <h1>Contact Us</h1>
 
-                <label htmlFor="email">Email address</label>
-                <input id='email' value={email} onChange={(e) => setEmail(e.target.value)} type="email" />
+                    <div className="icon-and-text">
+                        <div className="icon"><img src={emailIcon} alt="" /></div>
+                        <div className="text">
+                            <h4>email us</h4>
+                            <p>Please feel free to drop us a line. We will respond as soon as possible.</p>
+                            <img src={leavemsg} alt="" />
+                        </div>
+                    </div>
 
-                <label htmlFor="specialist">Specialist</label>
-                <select name="" id="specialist" onChange={(e) => setSpecialist(e.target.value)}>
-                 {specialistArray.map((specialist) => (
-                    <option value="specialist" key={specialist.id}>{specialist.firstName}</option>
-                    ))}
-                </select>
+                    <div className="icon-and-text">
+                        <div className="icon"><img src={careers} alt="" /></div>
+                        <div className="text">
+                            <h4>Careers</h4>
+                            <p>Sit ac ipsum leo lorem magna nunc mattis maecenas non vestibulum.</p>
+                            <img src={sendAppl} alt="" />
+                        </div>
+                    </div>
 
-                <label htmlFor="date">Date</label>
-                <input id='date' value={date} onChange={(e) => setDate(e.target.value)} type="date" />
-
-                <label htmlFor="time">Time</label>
-                <input id='time' value={time} onChange={(e) => setTime(e.target.value)} type="time" />
-
-     
-
-
-
-
-
-                <div className="subscribe-button"><button type='submit'>Make an appointment</button></div>
-                <button type="submit" id="btn-account" className="btn btn-theme" href="signin.html"><i className="fa-regular"></i>Make an appointment</button>
-            </form>
-
-            <div className="text-content">
-
-                <h1>Contact Us</h1>
-
-                <div className="icon-and-text">
-                    <h4>email us</h4>
-                    <p>Please feel free to drop us a line. We will respond as soon as possible.</p>
                 </div>
 
-                <div className="icon-and-text">
-                    <h4>email us</h4>
-                    <p>Please feel free to drop us a line. We will respond as soon as possible.</p>
-                </div>
+                <form onSubmit={handleSubmit} noValidate>
+                    <label htmlFor="name">Full name</label>
+                    <input id='name' value={fullName} onChange={(e) => setfullName(e.target.value)} type="text" />
+
+                    <label htmlFor="email">Email address</label>
+                    <input id='email' value={email} onChange={(e) => setEmail(e.target.value)} type="email" />
+
+                    <label htmlFor="specialist">Specialist</label>
+                    <select name="" id="specialist" onChange={(e) => setSpecialist(e.target.value)}>
+                    {specialistArray.map((specialist) => (
+                        <option value="specialist" key={specialist.id}>{specialist.firstName}</option>
+                        ))}
+                    </select>
+
+                    <label htmlFor="date">Date</label>
+                    <input id='date' value={date} onChange={(e) => setDate(e.target.value)} type="date" />
+
+                    <label htmlFor="time">Time</label>
+                    <input id='time' value={time} onChange={(e) => setTime(e.target.value)} type="time" />
+
+        
+
+
+
+
+
+                    <div className="subscribe-button"><button type='submit'>Make an appointment</button></div>
+                    <button type="submit" id="btn-account" className="btn btn-theme" href="signin.html"><i className="fa-regular"></i>Make an appointment</button>
+                </form>
+
 
             </div>
         </div>
-    </div>
+    </section>
 </main> 
 )
 }

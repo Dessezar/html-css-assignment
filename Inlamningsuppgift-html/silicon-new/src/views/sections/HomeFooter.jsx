@@ -29,12 +29,10 @@ const Footer = () => {
               <Link className="googleplay" to="/downloads/googleplay"><img src={GooglePlayImage} alt="Download on Google Play" /></Link>    
             </div>
             <div className="social-links">
-            <Link className="facebook"><img src={facebook} alt="facebook" /></Link>
-            <Link className="twitter"><img src={twitter} alt="facebook" /></Link>
-            <Link className="instagram"><img src={instagram} alt="facebook" /></Link>
-            <Link className="youtube"><img src={youtube} alt="facebook" /></Link>
-
-
+              <Link className="facebook"><img src={facebook} alt="facebook" /></Link>
+              <Link className="twitter"><img src={twitter} alt="facebook" /></Link>
+              <Link className="instagram"><img src={instagram} alt="facebook" /></Link>
+              <Link className="youtube"><img src={youtube} alt="facebook" /></Link>
             </div>
             <div className="reserve-text">
               <p>2024. All rights reserved. Pulvinar urna condimentum amet tempor, ornare integer. Lorem odio justo malesuada suspendisse viverra aliquet quisque turpis non. Feugiat in odio non nunc ornare consectetur.</p>

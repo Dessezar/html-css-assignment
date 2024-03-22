@@ -1,0 +1,19 @@
+#contact-us{
+    background-color: $gray-100;
+    .container{
+        .contact-content{
+            display: flex;
+            justify-content: space-between;
+            .text-content{
+                .icon-and-text{
+                    display: flex;
+                }
+
+            }
+            form{
+
+            }
+
+        }
+    }
+}
