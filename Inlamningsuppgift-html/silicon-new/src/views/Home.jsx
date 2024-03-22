@@ -7,6 +7,7 @@ import Subscribe from './sections/Subscribe'
 import FAQ from './sections/FAQ'
 import HowDoesItWork from './sections/HowDoesItWork'
 import Testemonials from './sections/Testemonials'
+import HomeFooter from './sections/HomeFooter'
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <Testemonials />
       <FAQ />
       <Subscribe />
+      <HomeFooter />
     </main>
   )
 }

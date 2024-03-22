@@ -4,7 +4,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './css/main.min.css';
 
 import Header from './views/sections/Header';
-import Footer from './views/sections/Footer';
 import Home from './views/Home';
 import Contact from './views/Contact';
 
@@ -19,7 +18,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-        <Footer />
       </div>
     </BrowserRouter>
   </React.StrictMode>,
