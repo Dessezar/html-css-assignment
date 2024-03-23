@@ -624,6 +624,9 @@ header .container #btn-menu {
   padding-left: 15px;
 }
 
+#subscribe {
+  margin-bottom: 50px;
+}
 #subscribe .container .subscribe-container {
   background-color: #F3F6FF;
   padding: 70px;
