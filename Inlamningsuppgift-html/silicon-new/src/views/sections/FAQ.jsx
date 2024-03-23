@@ -24,22 +24,23 @@ const FAQ = () => {
                             <div>
                                 <p>Still have unanswered questions and need to get in touch?</p>
                             </div>
-                            <div className="phone-card">
-                                <img src={purplePhone} alt="" />
-                                <p>Still have  questions?</p>
-                                <div className="contact-purple">
-                                    <p>Contact us</p>
-                                    <img src={purpleArrow} alt="" />
+                            <div className="cards">
+
+                                <div className="phone-card">
+                                    <img src={purplePhone} alt="" />
+                                    <p>Still have  questions?</p>
+                                    <div className="contact-purple">
+                                        <img src={purpleArrow} alt="" />
+                                    </div>
+
                                 </div>
+                                <div className="chat-card">
+                                    <img src={greenChat} alt="" />
+                                    <p>Don't like phone calls?</p>
+                                    <div className="contact-green">
+                                        <img src={greenArrow} alt="" />
 
-                            </div>
-                            <div className="chat-card">
-                                <img src={greenChat} alt="" />
-                                <p>Don't like phone calls?</p>
-                                <div className="contact-green">
-                                    <p>Contact us</p>
-                                    <img src={greenArrow} alt="" />
-
+                                    </div>
                                 </div>
                             </div>
 
@@ -79,7 +80,7 @@ const FAQ = () => {
                                 </div>
                                 {isCardBodyVisible[2] && (
                                     <div className="card-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla, nisl vel convallis blandit, erat felis eleifend odio, ac feugiat mauris arcu a nulla. Duis sit amet urna et odio volutpat viverra.
+                                        Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
                                     </div>
                                 )}
                             </div>

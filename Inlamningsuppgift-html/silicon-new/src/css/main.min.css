@@ -544,7 +544,6 @@ header .container #btn-menu {
 #showcase .container #showcase-image {
   grid-area: img;
   align-items: baseline;
-  width: 45%;
   padding: 20px 40px;
 }
 @media (min-width: 768px) {
@@ -570,10 +569,16 @@ header .container #btn-menu {
   padding: 40px 0;
 }
 
+#app-features {
+  margin: 70px 0 50px 0;
+}
 #app-features .container {
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-areas: "img" "text-and-icons";
+}
+#app-features .container .mobile-appfeatures {
+  margin-right: 150px;
 }
 #app-features .container .text-and-icons .features {
   display: grid;
@@ -581,16 +586,42 @@ header .container #btn-menu {
 }
 #app-features .container .text-and-icons .features .feature {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: auto 1fr;
+  margin-right: 60px;
 }
-.grid {
+#app-features .container .text-and-icons .features .feature img {
+  margin: 30px 20px 0px 0;
+}
+#transferfeatures {
+  margin-top: 100px;
+}
+#transferfeatures .container .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "text-and-buttom" "img" "img" "text-and-button";
 }
-.grid .check-img-and-text {
+#transferfeatures .container .grid .text-and-button {
+  width: 500px;
+}
+#transferfeatures .container .grid .text-and-button .check-img-and-text {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+#transferfeatures .container .grid .text-and-button .check-img-and-text img {
+  margin: 20px;
+}
+#transferfeatures .container .grid .text-and-button .text-and-icons-transfers {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  width: 500px;
+}
+#transferfeatures .container .grid .text-and-button .text-and-icons-transfers .btn {
+  margin-left: -10px;
+}
+#transferfeatures .container .grid .text-and-button .btn {
+  margin-left: 20px;
+  width: 100px;
+  padding-left: 15px;
 }
 
 .container .subscribe-container {
@@ -681,25 +712,59 @@ header .container #btn-menu {
   font-size: 10px;
 }
 
-#FAQ .container .accordion {
+#FAQ {
+  margin: 100px 0 100px 0;
+}
+#FAQ .container .FAQ-section {
+  display: flex;
+}
+#FAQ .container .FAQ-section .content-and-cards {
+  margin-right: 100px;
+}
+#FAQ .container .FAQ-section .content-and-cards h2 {
+  margin: 10px;
+  padding: 10px;
+}
+#FAQ .container .FAQ-section .content-and-cards p {
+  margin: 10px;
+  padding: 10px;
+}
+#FAQ .container .FAQ-section .content-and-cards .cards {
+  display: flex;
+}
+#FAQ .container .FAQ-section .content-and-cards .cards .phone-card {
+  border-radius: 8px;
+  border: 1px solid var(--Gray-300, #E2E5F1);
+  margin: 10px;
+  padding: 10px;
+}
+#FAQ .container .FAQ-section .content-and-cards .cards .chat-card {
+  border-radius: 8px;
+  border: 1px solid var(--Gray-300, #E2E5F1);
+  margin: 10px;
+  padding: 10px;
+}
+#FAQ .container .FAQ-section .accordion {
   display: flex;
   width: 746px;
   flex-direction: column;
   gap: 16px;
 }
-#FAQ .container .accordion .card {
+#FAQ .container .FAQ-section .accordion .card {
   border-radius: 8px;
   background: var(--White, #FFF);
   /* shadow / S */
   box-shadow: 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03), 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06);
+  padding: 16px 24px;
 }
-#FAQ .container .accordion .card .card-title {
+#FAQ .container .FAQ-section .accordion .card .card-title {
+  height: 50px;
   padding: 8px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#FAQ .container .accordion .card .card-title #accordion-button {
+#FAQ .container .FAQ-section .accordion .card .card-title #accordion-button {
   background-color: #F3F6FF;
   border: none;
   border-radius: 50%;

@@ -30,38 +30,38 @@ const Appfeatures = () => {
               </div>
             </div>
             <div className="feature">
-              <img src={feature_1} alt="card icon" />
+              <img src={feature_2} alt="sheild" />
               <div className="feature-content">
-                <h5>Easy Payment</h5>
-                <p>Id mollis consectetur congue egestas egestas suspendisse blandit justo.</p>
+                <h5>Data Security</h5>
+                <p>Augue pulvinar justo, fermentum fames aliquam accumsan vestibulum non. </p>
               </div>
             </div>
             <div className="feature">
-              <img src={feature_1} alt="card icon" />
+              <img src={feature_3} alt="card icon" />
               <div className="feature-content">
-                <h5>Easy Payment</h5>
-                <p>Id mollis consectetur congue egestas egestas suspendisse blandit justo.</p>
+                <h5>Cost Statistics</h5>
+                <p>Mattis urna ultricies non amet, purus in auctor non. Odio vulputate ac nibh.</p>
               </div>
             </div>
             <div className="feature">
-              <img src={feature_1} alt="card icon" />
+              <img src={feature_4} alt="card icon" />
               <div className="feature-content">
-                <h5>Easy Payment</h5>
-                <p>Id mollis consectetur congue egestas egestas suspendisse blandit justo.</p>
+                <h5>Support 24/7</h5>
+                <p>A elementum, imperdiet enim, pretium etiam facilisi in aenean quam mauris.</p>
               </div>
             </div>
             <div className="feature">
-              <img src={feature_1} alt="card icon" />
+              <img src={feature_5} alt="card icon" />
               <div className="feature-content">
-                <h5>Easy Payment</h5>
-                <p>Id mollis consectetur congue egestas egestas suspendisse blandit justo.</p>
+                <h5>Regular Cashback</h5>
+                <p>Sit facilisis dolor arcu, fermentum vestibulum arcu elementum imperdiet eleifend.</p>
               </div>
             </div>
             <div className="feature">
-              <img src={feature_1} alt="card icon" />
+              <img src={feature_6} alt="card icon" />
               <div className="feature-content">
-                <h5>Easy Payment</h5>
-                <p>Id mollis consectetur congue egestas egestas suspendisse blandit justo.</p>
+                <h5>Top Standards</h5>
+                <p>Faucibus cursus maecenas lorem cursus nibh. Sociis sit risus id. Sit facilisis dolor arcu.</p>
               </div>
             </div>
 

@@ -37,11 +37,11 @@ const Transferfeatures = () => {
             <h1>Receive payment from international bank details</h1>
             <div className="text-and-icons-transfers">
               <img src={feature_1} alt="card icon" />
-              <p>Manage your payments online. Mollis congue egestas egestas fermentum fames.</p>
               <img src={feature_5} alt="wallet icon" />
+              <p>Manage your payments online. Mollis congue egestas egestas fermentum fames.</p>
               <p>A elementur and imperdiet enim, pretium etiam facilisi aenean quam mauris.</p>
-              <a id="btn-account" className="btn btn-theme" href="signin.html"><i className="fa-regular"></i>Learn more</a>
 
+              <a id="btn-account" className="btn btn-theme" href="signin.html"><i className="fa-regular"></i>Learn more</a>
             </div>
 
 
