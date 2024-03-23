@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import Notification from "../../images/icons/notification.svg"
+import darkemail from "../../images/icons/light-envelope.svg"
+
 
 const Subscribe = () => {
     const [email, setEmail] = useState("")
@@ -27,17 +29,25 @@ const Subscribe = () => {
 
   return (
     <main>
-        <div className="container">
-            <div className="subscribe-container">
-                <div className="content">
-                    <div><img src={Notification} alt="notification bell" /></div>
-                    <form onSubmit={handleSubmit} noValidate>
-                        <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder='Your Email' />
-                        <button type="submit" id="btn-account" className="btn btn-theme" href="signin.html"><i className="fa-regular"></i>Subscribe</button>
-                    </form>
+        <section id="subscribe">
+            <div className="container">
+                <div className="subscribe-container">
+                    <div className="content">
+                        <div><img src={Notification} alt="notification bell" /></div>
+                        <h4>Subscribe to our newsletter to stay informed about latest updates</h4>
+                           <div className="input">
+
+                                <form onSubmit={handleSubmit} noValidate>
+                                    <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder='Your Email' />
+                                    <i><img src={darkemail} alt="" /></i>
+
+                                    <button type="submit" id="btn-account" className="btn btn-theme" href="signin.html"><i className="fa-regular"></i>Subscribe</button>
+                                </form>
+                           </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>  
     )
 }

@@ -624,8 +624,51 @@ header .container #btn-menu {
   padding-left: 15px;
 }
 
-.container .subscribe-container {
+#subscribe .container .subscribe-container {
   background-color: #F3F6FF;
+  padding: 70px;
+}
+#subscribe .container .subscribe-container .content {
+  display: flex;
+  align-items: center;
+}
+#subscribe .container .subscribe-container .content h4 {
+  margin-left: 60px;
+}
+#subscribe .container .subscribe-container .content .input {
+  position: relative;
+}
+#subscribe .container .subscribe-container .content .input form {
+  display: flex;
+  margin-left: 60px;
+}
+#subscribe .container .subscribe-container .content .input form input {
+  border: 1px solid var(--Gray-400, #D4D7E5);
+  background: var(--White, #FFF);
+  padding-left: 40px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  width: 240px;
+  color: var(--Gray-500, #B4B7C9);
+  font-feature-settings: "clig" off, "liga" off;
+  /* Body/M */
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+}
+#subscribe .container .subscribe-container .content .input form i {
+  position: absolute;
+  top: 57%;
+  left: 70px; /* Justera horisontellt läge för ikonen */
+  transform: translateY(-50%);
+}
+#subscribe .container .subscribe-container .content .input form button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-left: -30px;
+  padding: 20px;
 }
 
 #contact-us {
